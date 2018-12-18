@@ -1,0 +1,12 @@
+# add upstream remote and call it upstream.
+git remote -v
+git remote add upstream https://github.com/qmk/qmk_firmware.git
+
+# sync fork
+git fetch upstream
+
+git checkout master
+
+git merge upstream/master
+
+git push
